@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Issue Tracker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>JS Issue tracker<small> by Shakil Alam</small></h1>
+        <div class="jumbotron" role="form">
+            <h3>Add New Issue</h3>
+            <form id="jsIssueForm" data-netlify="true">
+                <div class="form-group">
+                    <label for="issueDescInput">Description</label>
+                    <input type="text" name="issueDescInput" id="issueDescInput" title="Enter Issue description" class="form-control"
+                        placeholder="Enter Description" required>
+                </div>
+                <div class="form-group">
+                    <label for="issueSeverityInput">Severity</label>
+                    <select name="issueSeverityInput" id="issueSeverityInput" title="Issue severity" class="form-control" required>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="issueAssignInput">Assigned to</label>
+                    <input type="text" name="issueAssignInput" id="issueAssignInput" title="Issue is assigned to ..." class="form-control"
+                        placeholder="Assigned to..." required>
+                </div>
+                <input type="submit" value="Submit"aria-label="Submit" class="btn btn-primary">
+            </form>
+        </div>
+        <div class="lg-12">
+            <div id="issueList">
+
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2019 by <a href="https://github.com/itxshakiil" class="text-decoration-none">Shakil Alam</a> </p>
+        </footer>
+    </div>
+    <script src="js/chance.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

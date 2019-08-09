@@ -1,0 +1,9 @@
+.well{
+    margin:1rem 0;
+    padding:1rem;
+    border-radius: 5px;
+    background:#eee;
+}
+.badge{
+    padding:0.5rem;
+}
